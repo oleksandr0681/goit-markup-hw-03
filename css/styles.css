@@ -80,16 +80,13 @@ header {
 }
 
 .menu a {
+    display: block;
+    padding: 24px 0;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-}
-
-.menu-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .menu a:hover, .menu a:focus {
@@ -106,15 +103,12 @@ address {
 }
 
 .address a {
+    display: block;
+    padding: 24px 0;
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-}
-
-.address-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .address a:hover, .address a:focus {
@@ -199,6 +193,7 @@ address {
 }
 
 .features-card-text {
+    margin-top: 8px;
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -217,13 +212,16 @@ address {
 }
 
 .team-card {
+    border-radius: 0 0 4px 4px;
     background-color: #fff;
     flex-basis: calc((100% - 72px) / 4);
-    padding-bottom: 32px;
+}
+
+.team-card-content {
+    padding: 32px 16px
 }
 
 .team-card-title {
-    margin-top: 32px;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.2;
@@ -254,12 +252,16 @@ address {
     background-color: #fff;
     flex-basis: calc((100% - 48px) / 3);
     padding-bottom: 32px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.project-card-content {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
 }
 
 .project-card-title {
-    margin-top: 32px;
-    padding-left: 16px;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.2;
@@ -269,7 +271,6 @@ address {
 
 .project-card-text {
     margin-top: 8px;
-    padding-left: 16px;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
